@@ -1,0 +1,51 @@
+<body>  
+ 
+    
+    <div class="container-fluid bs pt-5"> 
+      <div class="padd">
+        
+        <p class="text-light text-center fs-movil pt-5 titelSize" data-aos="fade-down"  style="font-family: FutureEarth;">PORTFOLIO</p>
+        
+        
+
+        <div class="row justify-content-center mt-5 efecto" >         
+          <div class="card-container mb-3 text-light cardWitdh ">
+            <a class="text-decoration-none text-light" routerLink="/skills">
+                <div class="row g-md-5 g-sm-0 ">
+                  <div class="col-md-4 col-sm-4 text-center">
+                    <img src="{{dataJM.img}}" class="imgHeight"  alt="...">
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{dataJM.name}}</h5>
+                      <p class="card-text">{{dataJM.desc}}</p>
+                      <p class="card-text"><small class="">Portfolio</small></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>    
+           </div>
+
+           <div class="row justify-content-center mt-5 efecto" >         
+            <div class="card-container mb-3 text-light cardWitdh ">
+              <a class="text-decoration-none text-light" routerLink="/skills">
+                  <div class="row g-md-5 g-sm-0 ">
+                    <div class="col-md-4 col-sm-4 text-center">
+                      <img src="{{dataBR.img}}" class="imgHeight"  alt="...">
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{dataBR.name}}</h5>
+                        <p class="card-text">{{dataBR.desc}}</p>
+                        <p class="card-text"><small class="">Portfolio</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                </div>    
+             </div>
+            </div>
+    </div>
+
+</body>

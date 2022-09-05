@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
 import { ContactoComponent } from './contacto/contacto.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -12,7 +14,9 @@ import { ContactoComponent } from './contacto/contacto.component';
   declarations: [
     HomeComponent,
     CardComponent,
-    ContactoComponent
+    ContactoComponent,
+    PortfolioComponent,
+    SkillsComponent
     
   ],
   

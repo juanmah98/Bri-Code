@@ -1,0 +1,111 @@
+.bs {
+  background-color: #000000;
+    /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
+    background-image: linear-gradient(rgba(6, 7, 28, 0.514), rgba(20, 20, 20, 0.767), rgba(8, 8, 8, 0.6)), url("../../../../assets/img/optimizadas/vondo-cv.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card-container {
+    perspective: 50%;
+  }
+
+  .efecto .card-container:hover{
+    transform: translateY(-3px) scale(1.00);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+    
+}
+
+.fs-movil{
+    font-size: 30px;
+  }
+
+  .cardWitdh{
+
+    max-width: 540px;
+  }
+
+  .imgHeight{
+    height: 170px;
+  }
+
+  @media (max-width: 850px) { 
+
+    .cardWitdh{
+
+      max-width: 540px;
+    }
+
+    .imgHeight{
+      height: 160px;
+    }
+
+    .card-title{
+      font-size: 16px;
+    }
+
+    .card-text{
+      font-size: 13px;
+    }
+
+    
+
+  }
+
+  @media (max-width: 600px) { 
+
+    .cardWitdh{
+
+      max-width: 520px;
+    }
+
+    .imgHeight{
+      height: 120px;
+    }
+
+    .card-title{
+      font-size: 16px;
+    }
+
+    .card-text{
+      font-size: 13px;
+    }
+
+    .titelSize{
+      font-size: 20px;
+    }
+
+  }
+
+  @media (max-width: 400px) { 
+
+    .cardWitdh{
+
+      max-width: 520px;
+    }
+
+    .imgHeight{
+      height: 100px;
+    }
+
+    .card-title{
+      font-size: 14px;
+    }
+
+    .card-text{
+      font-size: 10px;
+    }
+
+    .titelSize{
+      font-size: 16px;
+    }
+
+    
+
+  }
+  
