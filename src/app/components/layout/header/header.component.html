@@ -17,36 +17,23 @@
                 
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow text-light fs-5 p-2 m-1" routerLink="" >
+                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow fs-5 p-2 m-1" routerLink="" [ngClass]="state1 == true ? 'isTrue' : 'isFalse' "  (click)="setHome()">
                             Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow text-light fs-5 p-2 m-1"  routerLink="/card">
-                            Quienes Somos
+                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" routerLink="/portfolio" [ngClass]="state4 == true ? 'isTrue' : 'isFalse' " (click)="setPortfolio()">
+                            Nosotros
                         </a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href=""  routerLink="/Somos" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow text-light fs-5 p-2 m-1">
-                            Que hacemos
-                        </a>
-                    </li> -->
+                    
                     <li class="nav-item">
-                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow text-light fs-5 p-2 m-1" routerLink="/contacto">
+                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" routerLink="/contacto" [ngClass]="state3 == true ? 'isTrue' : 'isFalse' " (click)="setContacto()">
                             Contacto
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow text-light fs-5 p-2 m-1" routerLink="/portfolio">
-                            Portfolio
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow text-light fs-5 p-2 m-1">
-                            Más... 
-                        </a>
-                    </li> -->
+                   
                 </ul>
             </div>
         </div>
@@ -75,8 +62,8 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none text-light fs-5 p-1 m-1 btn-close "  routerLink="/card">
-                Quienes Somos
+            <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none text-light fs-5 p-1 m-1 btn-close "  routerLink="/portfolio">
+                Nosotros
             </a>
         </li>
        

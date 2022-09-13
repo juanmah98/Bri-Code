@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+import { Skills2Component } from './skills2/skills2.component';
 
 
 
@@ -16,7 +17,8 @@ import { SkillsComponent } from './skills/skills.component';
     CardComponent,
     ContactoComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    Skills2Component
     
   ],
   

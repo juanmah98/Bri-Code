@@ -5,6 +5,7 @@ import { ContactoComponent } from './components/routes/contacto/contacto.compone
 import { HomeComponent } from './components/routes/home/home.component';
 import { PortfolioComponent } from './components/routes/portfolio/portfolio.component';
 import { SkillsComponent } from './components/routes/skills/skills.component';
+import { Skills2Component } from './components/routes/skills2/skills2.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'card', component: CardComponent},
   {path: 'contacto', component: ContactoComponent},
   {path: 'portfolio', component: PortfolioComponent},
-  {path: 'skills', component: SkillsComponent}
+  {path: 'skills', component: SkillsComponent},
+  {path: 'skills2', component: Skills2Component}
  
   
 

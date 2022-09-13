@@ -15,7 +15,7 @@ export class PortfolioComponent implements OnInit {
   }
  
   dataJM:any  = {
-    name: "Juan Maanuel Herrero",
+    name: "Juan Manuel Herrero",
     img: "../../../../assets/img/optimizadas/jmfinal.png",
     desc: "Estudiante universitario, autodidacta, trabajando en MMakers actualmente. Cofundador de BriCode.",    
   };
