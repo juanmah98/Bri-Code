@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
   dataJM:any  = {
     name: "Juan Manuel Herrero",
     img: "../../../../assets/img/optimizadas/jmfinal.png",
-    desc: "Estudiante universitario, autodidacta, trabajando en MMakers actualmente. Cofundador de BriCode.",    
+    desc: "Actualmente viviendo en Valencia, España. Estudiando un master de diseño y desarrollo de paginas webs en MasterMedia. Cofundador de BriCode.",    
   };
 
   dataBR:any  = {

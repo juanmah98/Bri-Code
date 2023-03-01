@@ -38,7 +38,8 @@ export class SkillsComponent implements OnInit {
     react:"../../../../assets/img/iconos/react.png",
     skills:"../../../../assets/img/iconos/skills.png",
     sql:"../../../../assets/img/iconos/sql.png",
-    type:"../../../../assets/img/iconos/typescript.png"
+    type:"../../../../assets/img/iconos/typescript.png",
+    worpdress:"../../../../assets/img/iconos/worpdress.png"
   };
   soft:any={
     android:"../../../../assets/img/iconos/softwares/android.png",
@@ -56,7 +57,8 @@ export class SkillsComponent implements OnInit {
     cv:"../../../../assets/img/iconos/softwares/cv.png",
     linkedin:"../../../../assets/img/iconos/softwares/linkedin.png",
     software:"../../../../assets/img/iconos/softwares/herramienta.png",
-    bitbucket:"../../../../assets/img/iconos/softwares/bitbucket.png"
+    bitbucket:"../../../../assets/img/iconos/softwares/bitbucket.png",
+    figma:"../../../../assets/img/iconos/figma.png"
   }
 
 
