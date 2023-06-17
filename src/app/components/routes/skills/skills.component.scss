@@ -1,40 +1,57 @@
 .bs {
     background-color: #030a2c;
     /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(14, 14, 14, 0.767), rgba(8, 8, 8, 0.6)), url("../../../../assets/img/optimizadas/skills.jpg");
+    background-image: linear-gradient(rgba(17, 17, 17, 0.742),  rgba(61, 0, 76, 0.644)), url("../../../../assets/img/portf/ladrillo.png");
     background-size: cover;
-    background-attachment: fixed;
+   
     
-    background-repeat: no-repeat;
-    width: 100%;
+ 
+  
     padding-bottom: 100px;
     
+  }
+
+  .move{
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
   }
 
   .bs2 {
     background-color: #030a2c;
     /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(16, 16, 16, 0.767), rgba(8, 8, 8, 0.6)), url("../../../../assets/img/optimizadas/skills2.jpg");
+    background-image: linear-gradient(rgba(61, 0, 76, 0.644),rgba(17, 17, 17, 0.742)), url("../../../../assets/img/portf/ladrillo.png");
     background-size: cover;
-    background-attachment: fixed;
-    
-    background-repeat: no-repeat;
-    width: 100%;
+   
     
   }
 
   .bs3 {
     background-color: #030a2c;
     /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(16, 16, 16, 0.767), rgba(8, 8, 8, 0.6)), url("../../../../assets/img/optimizadas/page.jpg");
+    background-image: linear-gradient(rgba(17, 17, 17, 0.742),  rgba(0, 1, 29, 0.637)), url("../../../../assets/img/portf/ladrillo.png");
     background-size: cover;
-    background-attachment: fixed;
+   /*  background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100%; */
     
   }
 
+  .mac{
+    width: 60%;
+  }
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
@@ -126,6 +143,11 @@
     
   }
 
+  .size2{
+    width: 75px;
+    
+  }
+
   .marginB{
     margin-bottom: 110px;
   }
@@ -144,6 +166,16 @@
 
   .sizeName
   {
+
+    font-family: 'Game';
+font-style: normal;
+
+line-height: 58px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 1px 1px rgba(250, 255, 0, 0.85), 0px 4px 4px rgba(255, 122, 0, 0.82);
     padding-bottom: 70px;
   }
 
