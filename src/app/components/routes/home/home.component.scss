@@ -21,15 +21,30 @@
   src: url("../../../../assets/fonts/erasef-medium.otf");
 }
 
+@font-face {
+  font-family: 'bricode';
+  src: url("../../../../assets/fonts/LibreFranklin-VariableFont_wght.ttf");
+}
+
+.back-black {
+  margin: 0;
+  padding: 0;
+  height: 100vh; // vh significa "viewport height", es decir, el 100% de la altura de la ventana de visualización
+  background-color: #000; // Negro
+  color: #fff; // Color de texto blanco (puedes ajustarlo según tus preferencias)
+}
+
 .b {
   background-color: #000000;
-    background-image:  linear-gradient(rgba(6, 7, 28, 0.514), rgba(20, 20, 20, 0.767), rgba(8, 8, 8, 0.6)), url("../../../../assets/img/optimizadas/fondo1.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.963), rgba(20, 20, 20, 0.958), rgba(1, 0, 27, 0.963)), url("../../../../assets/img/optimizadas/fondo1.jpg");
     /* background-image: url("../img/fodno4.jpg"); */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+     margin: 0;
+  padding: 0;
+  height: 105vh; // vh significa "viewport height", es decir, el 100% de la altura de la ventana de visualización
    
 }
 
@@ -42,7 +57,7 @@
   font-family: FutureEarth;
   background-color: #030a2c;
   /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
-  background-image: linear-gradient(rgba(6, 7, 28, 0.514), rgba(20, 20, 20, 0.767), rgba(8, 8, 8, 0.6)), url("../../../../assets/img/optimizadas/fondo-desc-.jpg");
+  background-image: linear-gradient(rgba(1, 0, 27, 0.963), rgba(20, 20, 20, 0.949), rgba(8, 8, 8, 0.938)), url("../../../../assets/img/optimizadas/page.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
