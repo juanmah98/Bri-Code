@@ -8,6 +8,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 import { Skills2Component } from './skills2/skills2.component';
+import { FormComponent } from './form/form.component';
 
 
 
@@ -18,7 +19,8 @@ import { Skills2Component } from './skills2/skills2.component';
     ContactoComponent,
     PortfolioComponent,
     SkillsComponent,
-    Skills2Component
+    Skills2Component,
+    FormComponent
     
   ],
   

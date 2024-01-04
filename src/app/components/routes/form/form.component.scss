@@ -1,0 +1,80 @@
+body{
+    background-color: #0e0e0e;
+    height: 105vh;
+}
+
+::selection {
+    background-color: gray;
+  }
+  
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    
+   
+    background-image: linear-gradient(to bottom, #424242,#0e0e0e);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+  }
+  
+  .title {
+    color: rgb(255, 216, 43);
+    margin: 3rem 0;
+  }
+  
+  .input {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    width: 20rem;
+    background-color: inherit;
+    color: rgb(255, 216, 43);
+    border: none;
+    outline: none;
+  }
+  
+  .username {
+    border-bottom: 1px solid rgb(255, 216, 43);
+    transition: all 400ms;
+  }
+  
+  .username:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .password {
+    border-bottom: 1px solid rgb(255, 216, 43);
+    transition: all 400ms;
+  }
+  
+  .password:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .btn {
+    height: 3rem;
+    width: 20rem;
+    margin-top: 3rem;
+    background-color: rgb(255, 216, 43);
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 400ms;
+    box-shadow: 0 0 10px  rgb(255, 216, 43), 0 0 10px rgb(255, 216, 43);
+  }
+  
+  .btn:hover {
+    background-color: rgb(255, 216, 43);
+    box-shadow: none;
+  }
+  

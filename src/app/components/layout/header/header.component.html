@@ -21,17 +21,19 @@
                             Inicio
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" routerLink="/portfolio" [ngClass]="state4 == true ? 'isTrue' : 'isFalse' " (click)="setPortfolio()">
-                            Onno
-                        </a>
-                    </li>
-                    
+
                     <li class="nav-item">
                         <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" routerLink="/contacto" [ngClass]="state3 == true ? 'isTrue' : 'isFalse' " (click)="setContacto()">
                             Contacto
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="https://piazzeta-c2f38.web.app/" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" [ngClass]="state4 == true ? 'isTrue' : 'isFalse' " (click)="setPortfolio()">
+                            Onno
+                        </a>
+                    </li>
+                    
 
                    
                 </ul>
