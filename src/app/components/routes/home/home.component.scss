@@ -34,6 +34,7 @@
   color: #fff; // Color de texto blanco (puedes ajustarlo según tus preferencias)
 }
 
+
 .b {
   background-color: #0d0d0d;
     /* background-image:  linear-gradient(rgba(0, 0, 0, 0.963), rgba(20, 20, 20, 0.958), rgba(1, 0, 27, 0.963)), url("../../../../assets/img/optimizadas/fondo1.jpg"); */
@@ -42,8 +43,8 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-     margin: 0;
-  padding: 0;
+/*      margin: 0;
+  padding: 0; */
   /* height: 105vh; */ // vh significa "viewport height", es decir, el 100% de la altura de la ventana de visualización
    
   background: linear-gradient(180deg, #060606, #1e1e1e);
@@ -84,8 +85,8 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+
+/*   height: 105vh; */
 }
 
 .p{
@@ -149,8 +150,13 @@ div .img-logo{
   transform: rotateY(-180deg);
 }
 
-.fs-movil{
-  font-size: 30px;
+
+.bg-degrade{
+  background: linear-gradient(to right,  rgb(188, 154, 0), rgba(0, 0, 0, 0));
+}
+
+.bg-degrade2{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(188, 154, 0));
 }
 
 .lista li{
@@ -266,10 +272,10 @@ div .img-logo{
 .card {
 
   height: 254px;
-  background: rgba(46, 46, 46, 0.533);
+  background: transparent;
   transition: all 0.4s;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px  rgba(46, 46, 46, 0.705);
+  box-shadow: 0px 0px 10px 5px  rgba(46, 46, 46, 0);
   font-size: 30px;
   font-weight: 900;
 }
@@ -405,17 +411,56 @@ div .img-logo{
   animation-direction: normal, alternate;
 }
 
+  /* Grow Shadow */
+  .hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
 @media (max-width: 500px) { 
     
-  .b{
-    height: auto;
+  /* .b{
+    height: unset;
   }
   .b2{
-    height: auto;
+    height: unset;
   }
 
   .fs-movil{
     font-size: 15px;
+  } */
+ 
+}
+
+@media (max-width: 700px) { 
+    
+  .b{
+    height: 135vh;
+  }
+  .b2{
+    height: 135vh;
+  }
+
+  .fs-movil{
+    font-size: 15px;
+  }
+
+  .card {
+
+    height: auto;
+
   }
  
 }
