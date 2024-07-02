@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 import { Skills2Component } from './skills2/skills2.component';
 import { FormComponent } from './form/form.component';
+import { LayoutModule } from '../layout/layout.module';
 
 
 
@@ -28,7 +29,8 @@ import { FormComponent } from './form/form.component';
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    LayoutModule
   ]
 })
 export class RoutesModule { }
