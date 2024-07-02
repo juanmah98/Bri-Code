@@ -47,13 +47,30 @@
   padding: 0; */
   /* height: 105vh; */ // vh significa "viewport height", es decir, el 100% de la altura de la ventana de visualización
    
-  background: linear-gradient(180deg, #060606, #1e1e1e);
+  background: linear-gradient(180deg, #000000, #111111);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 16s ease infinite;
     -moz-animation: AnimationName 16s ease infinite;
     animation: AnimationName 16s ease infinite;
 }
+
+.bg-oficina{
+  background-color: #030a2c;
+  /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(9, 9, 9, 0.949), rgba(0, 0, 0, 0.89)), url("../../../../assets/img/nosotros/oficina.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.espacio{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+
 
 @-webkit-keyframes AnimationName {
     0%{background-position:51% 0%}
@@ -76,7 +93,7 @@
   font-size: small;
 }
 
-.b2 {
+.bg-servicios {
   font-family: FutureEarth;
   background-color: #030a2c;
   /* background-image:  linear-gradient(rgba(82, 81, 81, 0.514), rgba(0, 0, 0, 0.6)), url("../img/fondo2.png"); */
@@ -326,7 +343,7 @@ div .img-logo{
 
 
  .mac{
-  width: 60%;
+  width: 40%;
 }
 
 .move{
@@ -461,6 +478,10 @@ div .img-logo{
 
     height: auto;
 
+  }
+
+  .mac{
+    width: 80%;
   }
  
 }
