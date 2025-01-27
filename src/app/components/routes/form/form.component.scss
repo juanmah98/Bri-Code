@@ -1,80 +1,192 @@
-body{
-    background-color: #0e0e0e;
-    height: 120vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  font-family: 'Poppins', sans-serif;
 }
 
-::selection {
-    background-color: gray;
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 1rem;
+}
+
+.form-content {
+  background-color: #18181b;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #27272a;
+}
+
+.progress-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-text {
+  color: #ffc107;
+  font-size: 0.875rem;
+}
+
+.progress-bars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  height: 0.25rem;
+  width: 2rem;
+  border-radius: 9999px;
+  background-color: #3f3f46;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: #ffc107;
   }
-  
-  .container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form-input, .form-select {
+  width: 100%;
+  background-color: #27272a;
+  border: 1px solid #3f3f46;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+
+  &:focus {
+    border-color: #ffc107;
   }
-  
-  .form {
-    
-   
-    background-image: linear-gradient(to bottom, #424242,#0e0e0e);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 0.5rem;
+
+  &::placeholder {
+    color: #71717a;
   }
-  
-  .title {
-    color: rgb(255, 216, 43);
-    margin: 3rem 0;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
-  
-  .input {
-    margin: 0.5rem 0;
-    padding: 1rem 0.5rem;
-    width: 20rem;
-    background-color: inherit;
-    color: rgb(255, 216, 43);
-    border: none;
-    outline: none;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  color: black;
+
+  &:hover:not(:disabled) {
+    background-color: #ffca2c;
   }
-  
-  .username {
-    border-bottom: 1px solid rgb(255, 216, 43);
-    transition: all 400ms;
+}
+
+.btn-secondary {
+  background-color: #27272a;
+  color: white;
+  border: 1px solid #3f3f46;
+
+  &:hover {
+    background-color: #3f3f46;
   }
-  
-  .username:hover {
-    background-color: #424242;
-    border: none;
-    border-radius: 0.5rem;
+}
+
+.style-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.style-option {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #27272a;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3f3f46;
   }
-  
-  .password {
-    border-bottom: 1px solid rgb(255, 216, 43);
-    transition: all 400ms;
+
+  input[type="radio"] {
+    display: none;
   }
-  
-  .password:hover {
-    background-color: #424242;
-    border: none;
-    border-radius: 0.5rem;
+
+  .style-radio {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #52525b;
+    margin-right: 0.75rem;
+    transition: all 0.3s ease;
   }
-  
-  .btn {
-    height: 3rem;
-    width: 20rem;
-    margin-top: 3rem;
-    background-color: rgb(255, 216, 43);
-    border-radius: 0.5rem;
-    border: none;
-    font-size: 1.2rem;
-    transition: all 400ms;
-    box-shadow: 0 0 10px  rgb(255, 216, 43), 0 0 10px rgb(255, 216, 43);
+
+  input[type="radio"]:checked + .style-radio {
+    border-color: #ffc107;
+    background-color: #ffc107;
   }
-  
-  .btn:hover {
-    background-color: rgb(255, 216, 43);
-    box-shadow: none;
+
+  .style-label {
+    color: white;
   }
-  
+}
+
+.confirmation-message {
+  text-align: center;
+  padding: 2rem 0;
+
+  p {
+    color: #a1a1aa;
+  }
+}

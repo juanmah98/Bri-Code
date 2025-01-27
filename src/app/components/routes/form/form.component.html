@@ -1,18 +1,110 @@
-<body class="d-md-flex align-items-center justify-content-center">
-    <div class="row container-fluid">
-       
-        
-            <div class="container">
-                <div class="col-12 col-md-6 col-sm-8">
-                <form class="form" action="">
-                    <p class="fs-3 fw-bold title">COMENCEMOS</p>
-                    <input placeholder="Name" class="username input" type="text">
-                    <input placeholder="Last Name" class="password input" type="text">
-                    <input placeholder="Descripcion de tu proyecto" class="password input" type="text">
-                    <input placeholder="Descripcion de tu proyecto" class="password input" type="hidden">
-                    <button class="btn" type="submit">Enviar</button>
-                </form>
-            </div>
+<div class="form-container">
+  <div class="form-wrapper">
+    <div class="form-content">
+      <div *ngIf="step < 4" class="progress-header">
+        <span class="step-text">Paso {{step}} de 3</span>
+        <div class="progress-bars">
+          <div class="progress-bar" [class.active]="step >= 1"></div>
+          <div class="progress-bar" [class.active]="step >= 2"></div>
+          <div class="progress-bar" [class.active]="step >= 3"></div>
         </div>
+      </div>
+
+      <!-- Step 1: Información Personal -->
+      <div *ngIf="step === 1" class="step-content">
+        <h2 class="step-title">Cuéntanos sobre ti</h2>
+        <form [formGroup]="formGroup">
+          <input 
+            type="text" 
+            formControlName="name"
+            placeholder="Nombre"
+            class="form-input"
+          >
+          <div class="error-message" *ngIf="formGroup.get('name')?.errors?.['required'] && formGroup.get('name')?.touched">
+            El nombre es requerido
+          </div>
+          
+          <input 
+            type="email" 
+            formControlName="email"
+            placeholder="Correo electrónico"
+            class="form-input"
+          >
+          <div class="error-message" *ngIf="formGroup.get('email')?.errors?.['required'] && formGroup.get('email')?.touched">
+            El email es requerido
+          </div>
+          <div class="error-message" *ngIf="formGroup.get('email')?.errors?.['email'] && formGroup.get('email')?.touched">
+            Ingresa un email válido
+          </div>
+
+          <button class="btn-primary" (click)="nextStep()" [disabled]="!canProceedStep1()">
+            Siguiente
+          </button>
+        </form>
+      </div>
+
+      <!-- Step 2: Tipo de Proyecto -->
+      <div *ngIf="step === 2" class="step-content">
+        <h2 class="step-title">¿Qué tipo de proyecto necesitas?</h2>
+        <form [formGroup]="formGroup">
+          <select formControlName="projectType" class="form-select">
+            <option value="">Selecciona un tipo de proyecto</option>
+            <option value="landing-page">Landing Page</option>
+            <option value="web-app">Web App</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="blog">Blog</option>
+          </select>
+          <div class="error-message" *ngIf="formGroup.get('projectType')?.errors?.['required'] && formGroup.get('projectType')?.touched">
+            Selecciona un tipo de proyecto
+          </div>
+
+          <div class="button-group">
+            <button class="btn-secondary" (click)="prevStep()">
+              Atrás
+            </button>
+            <button class="btn-primary" (click)="nextStep()" [disabled]="!canProceedStep2()">
+              Siguiente
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 3: Estilo -->
+      <div *ngIf="step === 3" class="step-content">
+        <h2 class="step-title">Selecciona un estilo de diseño</h2>
+        <form [formGroup]="formGroup">
+          <div class="style-options">
+            <label *ngFor="let style of styleOptions" class="style-option">
+              <input 
+                type="radio" 
+                [value]="style.value"
+                formControlName="style"
+              >
+              <div class="style-radio"></div>
+              <span class="style-label">{{style.label}}</span>
+            </label>
+          </div>
+          
+          <div class="error-message" *ngIf="formGroup.get('style')?.errors?.['required'] && formGroup.get('style')?.touched">
+            Selecciona un estilo
+          </div>
+
+          <div class="button-group">
+            <button class="btn-secondary" (click)="prevStep()">
+              Atrás
+            </button>
+            <button class="btn-primary" (click)="submitForm()" [disabled]="!canSubmit()">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 4: Confirmación -->
+      <div *ngIf="step === 4" class="confirmation-message">
+        <h2 class="step-title">¡Gracias!</h2>
+        <p>Hemos recibido tu información. Nos pondremos en contacto contigo pronto.</p>
+      </div>
     </div>
-</body>
+  </div>
+</div>

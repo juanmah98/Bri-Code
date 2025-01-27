@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { CardComponent } from './card/card.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -30,7 +30,9 @@ import { LayoutModule } from '../layout/layout.module';
     CommonModule,
     RouterModule,
     FormsModule,
-    LayoutModule
+    LayoutModule,
+    FormsModule,
+    ReactiveFormsModule 
   ]
 })
 export class RoutesModule { }

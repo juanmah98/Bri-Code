@@ -9,7 +9,7 @@
             
             <div class="navbar-brand">
                 <a href="" class="text-decoration-none text-white m-auto fs-1 px-3" style="font-family: Biger;">
-                    <img src="../../../../assets/img/bricodenew.png" class="img-fluid" style="width: 45px;" alt="">
+                    <img src="../../../../assets/img/bricodenew.png" class="img-fluid" style="width: 35px;" alt="">
                     <!-- &nbsp;BriCode -->
                 </a>
             </div>
@@ -22,11 +22,11 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                <!--     <li class="nav-item">
                         <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" routerLink="/contacto" [ngClass]="state3 == true ? 'isTrue' : 'isFalse' " (click)="setContacto()">
                             Contacto
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <a href="https://fidecards.com" rel="noopener noreferrer" class="nav-item text-decoration-none rounded shadow  fs-5 p-2 m-1" [ngClass]="state4 == true ? 'isTrue' : 'isFalse' " (click)="setPortfolio()">
@@ -69,15 +69,21 @@
                 Inicio
             </a>
         </li>
-        <li class="nav-item">
+       <!--  <li class="nav-item">
             <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none text-light fs-5 p-1 m-1 btn-close "  routerLink="/portfolio">
                 Nosotros
             </a>
-        </li>
+        </li> -->
        
+         <li class="nav-item">
+            <a href="https://fidecards.com" rel="noopener noreferrer" class="nav-item text-decoration-none text-light fs-5 p-1 m-1 btn-close" [ngClass]="state4 == true ? 'isTrue' : 'isFalse' " (click)="setPortfolio()">
+                            Fidelity
+             </a>
+        </li> 
+
         <li class="nav-item">
-            <a href="" rel="noopener noreferrer" class="nav-item text-decoration-none  text-light fs-5 p-1 m-1 btn-close" routerLink="/contacto">
-                Contacto
+            <a href="https://fidecards.com" rel="noopener noreferrer" class="nav-item text-decoration-none text-light fs-5 p-1 m-1 btn-close" [ngClass]="state4 == true ? 'isTrue' : 'isFalse' " (click)="setPortfolio()">
+                <button class="btn btn-outline-warning mb-0 btn-sm">¡Comienza ya!</button>
             </a>
         </li>
       
